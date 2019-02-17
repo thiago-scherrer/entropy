@@ -2,6 +2,8 @@
 
 Software to generate a cryptographically secure random seed.
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/thiago-scherrer/entropy)](https://goreportcard.com/report/github.com/thiago-scherrer/entropy)
+
 Using /dev/urandom on Linux. On OpenBSD getentropy(2). On other Unix-like systems /dev/urandom. On Windows systems, Reader uses the CryptGenRandom API. On Wasm uses the Web Crypto API.
 
 ## reqs
