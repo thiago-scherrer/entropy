@@ -9,18 +9,29 @@ Using /dev/urandom on Linux. On OpenBSD getentropy(2). On other Unix-like system
 ## reqs
 
 - golang >=1.11.2
-- crypto/rand golang module
-- encoding/base64 golang module
-- flag golang module
-- fmt golang module
-- os golang module
+
+## test
+
+```bash
+go test 
+```
 
 ## build
 
-Run:
-
 ```bash
 go build entropy.go
+```
+
+## run
+
+Create a seed with 20 bytes
+```bash
+./entropy -size 20
+```
+
+Help:
+```bash
+./entropy -help
 ```
 
 ## refs
