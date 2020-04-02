@@ -5,6 +5,7 @@ import (
 	"encoding/base64"
 	"flag"
 	"fmt"
+	"log"
 	"os"
 )
 
@@ -42,8 +43,8 @@ func seedGen(size int) (result string) {
 	crypto := make([]byte, size)
 	_, err := rand.Read(crypto)
 	if err != nil {
-		return
+		log.Fatal("Error: ", err)
 	}
-	result = base64.StdEncoding.EncodeToString(crypto)
-	return result
+
+	return base64.StdEncoding.EncodeToString(crypto)
 }
