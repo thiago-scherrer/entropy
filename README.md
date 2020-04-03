@@ -34,6 +34,7 @@ Create a seed with 20 bytes
 ```
 
 Help:
+
 ```bash
 ./entropy -help
 ```
