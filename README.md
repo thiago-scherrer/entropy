@@ -11,17 +11,17 @@ Software to generate a cryptographically secure random seed.
 
 ## reqs
 
-- golang >=1.11.2
+- golang >=1.16
 
 ## test
 
-```bash
+```sh
 go test
 ```
 
 ## build
 
-```bash
+```sh
 go build entropy.go
 ```
 
@@ -29,7 +29,7 @@ go build entropy.go
 
 Create a seed with 20 bytes
 
-```bash
+```sh
 ./entropy -size 20
 ```
 
