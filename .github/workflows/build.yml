@@ -10,4 +10,4 @@ jobs:
       -
         name: Build
         run: |
-         docker build -t entropy .
+          ls -hal
