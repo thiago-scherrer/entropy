@@ -1,0 +1,13 @@
+name: build
+
+on:
+  push:
+
+jobs:
+  build:
+    run-on: ubuntu-latest
+    steps:
+      -
+        name: docker build
+        run: docker build . -t entropy
+      -
