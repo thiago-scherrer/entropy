@@ -1,14 +1,13 @@
-name: build
+name: Build
 
 on:
   push:
-    branches: [ main ]
 
 jobs:
   build:
-    name: Run build
-    run-on: ubuntu-latest
+    runs-on: [ubuntu-latest]
     steps:
       -
-        name: docker build
-        run: docker build . -t entropy
+        name: Build
+        run: |
+         docker build . -t entropy
