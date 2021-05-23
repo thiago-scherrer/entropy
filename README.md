@@ -13,6 +13,21 @@ Software to generate a cryptographically secure random seed.
 ## reqs
 
 - golang >=1.16
+- docker (only with use docker)
+
+## run with docker
+
+Build:
+
+```sh
+docker build -t entropy .
+```
+
+Running and create a seed with 20 bytes
+
+```sh
+docker run entropy -size 20
+```
 
 ## test
 
@@ -20,15 +35,15 @@ Software to generate a cryptographically secure random seed.
 go test
 ```
 
-## build
+## build without docker
+
+Build:
 
 ```sh
 go build entropy.go
 ```
 
-## run
-
-Create a seed with 20 bytes
+Running and create a seed with 20 bytes
 
 ```sh
 ./entropy -size 20
