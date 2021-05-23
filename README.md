@@ -2,6 +2,7 @@
 
 Software to generate a cryptographically secure random seed.
 
+[![Build](https://github.com/thiago-scherrer/entropy/actions/workflows/build.yml/badge.svg)](https://github.com/thiago-scherrer/entropy/actions/workflows/build.yml)
 [![Go Report Card](https://goreportcard.com/badge/github.com/thiago-scherrer/entropy)](https://goreportcard.com/report/github.com/thiago-scherrer/entropy)
 
 - Using /dev/urandom on Linux.
